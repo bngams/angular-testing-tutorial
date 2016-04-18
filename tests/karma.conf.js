@@ -15,7 +15,7 @@ module.exports = function(config) {
       '../app/bower_components/angular-strap/dist/angular-strap.tpl.js',
       '../app/bower_components/angular-mocks/angular-mocks.js',
       '../app/bower_components/angular-route/angular-route.js',
-      './unit/*.js',
+      './unit/spec.js',
       '../app/app.js'
     ],
 
