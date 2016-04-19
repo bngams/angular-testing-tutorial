@@ -1,0 +1,22 @@
+describe('routes', function(){
+
+  beforeEach(function () {
+    module('myApp');
+  });
+
+  beforeEach(inject(function ( /* to complete */) { // element to inject $httpBackend, $route, $location, $rootScope
+    // code to complete
+    $scope = $rootScope.$new();
+  }));
+
+  it('should load the one.html template', function(){
+    $httpBackend.whenGET('partials/one.html').respond('...'); // ??
+    // ?? que signifie ce bloc ?
+    $scope.$apply(function() {
+      $location.path('/one');
+    });
+    assert.equal($route.current.templateUrl, 'partials/one.html');
+    // add a line to test if $route.current.controller is the good one
+  });
+
+});

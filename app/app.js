@@ -37,7 +37,10 @@
   });
 
   myApp.controller('TestThreeController', function($scope) {
-    $scope.modal = {title: 'Hi!', content: 'This is a message!'};
+    $scope.modalNumber = 1;
+    $scope.changeModalText = function() {
+      $scope.modalNumber++;
+    };
   });
 
   myApp.controller('TestFourController', function($scope, $http) {

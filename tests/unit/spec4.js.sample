@@ -1,0 +1,17 @@
+describe('TestFourController', function () {
+
+  var controller = null;
+  var $scope = null;
+
+  beforeEach(function () {
+    module('myApp'); // load fakeJSON dependency here
+  });
+
+    beforeEach(inject(function ($controller, $rootScope, ... ) { // add the necessary mocking injections
+      // TODO : read https://docs.angularjs.org/api/ngMock/service/$httpBackend
+      controller = $controller('TestFourController', {
+          $scope: $scope
+      });
+    }));
+
+});
